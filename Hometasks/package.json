@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-hometask",
+  "version": "1.0.0",
+  "description": "HomeTask 3 JS course",
+  "license": "ISC",
+  "author": "PassionPaul",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "task1": "node nodejs-hometask.js",
+    "task2": "node homework.js",
+    "task3": "node homework-arrays-objects.js"
+    },
+  "dependencies": {
+    "fs-extra": "^11.3.5",
+    "mocha": "^11.7.6",
+    "yargs": "^18.0.0"
+  }
+}
