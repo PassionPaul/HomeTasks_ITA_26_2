@@ -9,7 +9,8 @@
   "scripts": {
     "task1": "node nodejs-hometask.js",
     "task2": "node homework.js",
-    "task3": "node homework-arrays-objects.js"
+    "task3": "node homework-arrays-objects.js",
+    "test1": "node test1.js"
     },
   "dependencies": {
     "fs-extra": "^11.3.5",
