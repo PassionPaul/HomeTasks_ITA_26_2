@@ -1,5 +1,3 @@
-const { resolve } = require("node:dns")
-
 function FormatToCurrency(StringNumbers) {
 
 return StringNumbers.map((Str) => {
