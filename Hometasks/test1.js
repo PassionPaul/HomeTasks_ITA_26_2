@@ -101,12 +101,13 @@ ExecutePromisesInParallel([Fn1, Fn2, Fn3])
 
 function PrintMultiplicationTable(N) {
 
+if (Number.isInteger(N) && N >= 1) {
+
 const Table = []
 const RowSumm = Array(N).fill(0)
 const ColSumm = Array(N).fill(0)
+
 let TotalSumm = 0
-  
-if (Number.isInteger(N) && N >= 1) {
     for (let i = 1; i <= N; i++) {
         const Row = [];
         for (let j =1; j<= N; j++) {
@@ -143,12 +144,12 @@ console.log('Sum of table:', TotalSumm.toString())
 }
 
 else{
-    console.log('Number must be integer, and equal or higher than 1')
+    console.log(`${N} is invalid. Number must be integer, and equal or higher than 1`) 
 }
 
 }
 
-PrintMultiplicationTable(9)
+PrintMultiplicationTable(8)
 
 
 
