@@ -73,28 +73,28 @@ let current = new Date(startDate);
 let end = new Date(endDate);
 
 if (isNaN(current.getTime()) || isNaN(end.getTime())) {
-    console.error("Ошибка: Введены некорректные даты.");
+    console.error("Error: Invalid date format. Please use 'YYYY-MM-DD'.");
     return;
 }
 
-let count = 0;
-const datesList = [];
+let count = 0
+const datesList = []
 
 while (current <= end) {
      if (current.getDate() === 13 && current.getDay() === 5) {
         count++;
-        datesList.push(new Date(current)); // Добавляем копию даты в список
+        datesList.push(new Date(current))
      }
         
-     current.setDate(current.getDate() + 1);
+     current.setDate(current.getDate() + 1)
 }
 
-console.log(`Total Friday 13th count: ${count}`);
-console.log("List of found dates:");
-datesList.forEach(date => console.log(date.toLocaleDateString('ru-Ru')));
+console.log(`Total Friday 13th count: ${count}`)
+console.log("List of found dates:")
+datesList.forEach(date => console.log(date.toLocaleDateString('ru-Ru')))
     
-return { count, datesList };
+return { count, datesList }
 
 }
 
-countFridayThe13ths('2000-01-01', '2026-07-01');
+countFridayThe13ths('2000-01-01', '2026-07-01')
