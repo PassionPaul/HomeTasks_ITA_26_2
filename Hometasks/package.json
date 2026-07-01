@@ -10,6 +10,7 @@
     "task1": "node nodejs-hometask.js",
     "task2": "node homework.js",
     "task3": "node homework-arrays-objects.js",
+    "task4": "node homework-functions.js",
     "test1": "node test1.js"
     },
   "dependencies": {
